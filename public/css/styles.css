@@ -1,0 +1,66 @@
+/* Grid */
+body > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 7em);
+  padding: 1rem 0;
+}
+
+main > img {
+  width: 150px;
+  align-self: center;
+}
+
+.invert-img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+/* 
+  -webkit-filter: invert(1);
+  filter: invert(1); 
+*/
+
+@media (min-width: 576px) {
+  body > main {
+    padding: 1.25rem 0;
+  }
+  body > .container {
+    width: 404;
+  }
+}
+
+@media (min-width: 768px) {
+  body > main {
+    padding: 1.5rem 0;
+  }
+  body > .container {
+    width: 538px;
+  }
+}
+
+@media (min-width: 992px) {
+  body > main {
+    padding: 1.75rem 0;
+  }
+  body > .container {
+    width: 694px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body > main {
+    padding: 2rem 0;
+  }
+
+  body > .container {
+    width: 840px;
+  }
+}
+
+/* Nav */
+summary[role="link"].secondary:is([aria-current], :hover, :active, :focus) {
+  background-color: transparent;
+  color: var(--secondary-hover);
+}
