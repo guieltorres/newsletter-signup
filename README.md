@@ -1,6 +1,6 @@
 # newsletter-signup
 
-This project is a single page application (SPA) that allows users to sign up for a newsletter by providing their name, last name, and email. The information is then sent to Mailchimp via API.
+This project allows users to sign up for a newsletter by providing their name, last name, and email. The information is then sent to Mailchimp via API.
 
 ## Technologies Used
 

@@ -17,11 +17,6 @@ main > img {
   filter: invert(1);
 }
 
-/* 
-  -webkit-filter: invert(1);
-  filter: invert(1); 
-*/
-
 @media (min-width: 576px) {
   body > main {
     padding: 1.25rem 0;
