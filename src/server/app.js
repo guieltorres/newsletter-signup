@@ -6,7 +6,7 @@ const client = require("@mailchimp/mailchimp_marketing");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // remember to add you api configuration bellow to run locally
 
@@ -85,6 +85,6 @@ app.post("/", function (req, res) {
   // run();
 });
 
-app.listen(process.env.PORT || port, function () {
-  console.log("Server is running on port " + port);
+app.listen(PORT, function () {
+  console.log("Server is running on port " + PORT);
 });
