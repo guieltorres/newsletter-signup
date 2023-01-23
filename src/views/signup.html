@@ -52,30 +52,42 @@
         title="computer stickers"
         >Computer stickers created by Stickers - Flaticon</a
       > -->
-      <img src="images/logo1.png" alt="logo1" data-theme="light" />
-      <hgroup>
-        <h1>Sign Up</h1>
-        <h2>Don't miss out, subscribe today!</h2>
-      </hgroup>
-      <form action="/" method="post">
-        <!-- Grid -->
-        <div class="grid">
+      <article>
+        <img src="images/logo1.png" alt="logo1" data-theme="light" />
+        <hgroup>
+          <h1>Sign Up</h1>
+          <h2>Don't miss out, subscribe today!</h2>
+        </hgroup>
+        <form action="/" method="post">
+          <!-- Grid -->
+          <div class="grid">
+            <input
+              type="text"
+              name="firstname"
+              placeholder="First name"
+              required
+              autofocus
+            />
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Last name"
+              required
+            />
+          </div>
           <input
-            type="text"
-            name="firstname"
-            placeholder="First name"
+            type="email"
+            name="email"
+            placeholder="Email address"
             required
-            autofocus
           />
-          <input type="text" name="lastname" placeholder="Last name" required />
-        </div>
-        <input type="email" name="email" placeholder="Email address" required />
-        <small>We'll never share your email with anyone else.</small>
-        <!-- Button -->
-        <button role="button" class="contrast" type="submit">
-          Sign Me Up!
-        </button>
-      </form>
+          <small>We'll never share your email with anyone else.</small>
+          <!-- Button -->
+          <button role="button" class="contrast" type="submit">
+            Sign Me Up!
+          </button>
+        </form>
+      </article>
     </main>
     <!-- ./ Main -->
 

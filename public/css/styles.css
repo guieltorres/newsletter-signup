@@ -7,9 +7,15 @@ body > main {
   padding: 1rem 0;
 }
 
-main > img {
-  width: 150px;
-  align-self: center;
+article > img {
+  display: flex;
+  margin: 0 auto;
+  width: 230px;
+  padding-bottom: 10px;
+}
+
+form > button {
+  margin-bottom: 0;
 }
 
 .invert-img {
