@@ -1,3 +1,5 @@
+/* Global CSS */
+
 /* Grid */
 body > main {
   display: flex;
@@ -5,17 +7,6 @@ body > main {
   justify-content: center;
   min-height: calc(100vh - 7em);
   padding: 1rem 0;
-}
-
-article > img {
-  display: flex;
-  margin: 0 auto;
-  width: 230px;
-  padding-bottom: 10px;
-}
-
-form > button {
-  margin-bottom: 0;
 }
 
 .invert-img {
@@ -64,4 +55,26 @@ form > button {
 summary[role="link"].secondary:is([aria-current], :hover, :active, :focus) {
   background-color: transparent;
   color: var(--secondary-hover);
+}
+
+/* Signup-css */
+article > img {
+  display: flex;
+  margin: 0 auto;
+  width: 230px;
+  padding-bottom: 10px;
+}
+
+form > button {
+  margin-bottom: 0;
+}
+
+/* Success/Failure css  */
+
+div > a {
+  margin-bottom: var(--typography-spacing-vertical);
+}
+
+article > div > img {
+  width: 300px;
 }
