@@ -1,9 +1,9 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
-const request = require("request");
 const https = require("node:https");
 const client = require("@mailchimp/mailchimp_marketing");
+const path = require("path");
 
 const app = express();
 const port = 3000;
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/signup.html");
+  res.sendFile(path.join(__dirname, "..", "..", "src", "views", "signup.html"));
 });
 
 app.post("/", function (req, res) {
@@ -58,9 +58,13 @@ app.post("/", function (req, res) {
       console.log(JSON.parse(data));
     });
     if (response.statusCode === 200) {
-      res.sendFile(__dirname + "/success.html");
+      res.sendFile(
+        path.join(__dirname, "..", "..", "src", "views", "success.html")
+      );
     } else {
-      res.sendFile(__dirname + "/failure.html");
+      res.sendFile(
+        path.join(__dirname, "..", "..", "src", "views", "failure.html")
+      );
     }
   });
 

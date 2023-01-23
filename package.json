@@ -4,6 +4,7 @@
   "description": "This project is a simple newsletter signup page. It allows visitors to the website to enter their email address and subscribe to receive regular updates and news via email.",
   "main": "app.js",
   "scripts": {
+    "start": "node src/server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Guilherme Torres",

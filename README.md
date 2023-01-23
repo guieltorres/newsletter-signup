@@ -8,16 +8,17 @@ This project allows users to sign up for a newsletter by providing their name, l
 
 - **Node.js**: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It is used as the server for the application.
 
-- **Express**: Express is a Node.js web application framework that provides a robust set of features for web and mobile applications. It is used to handle routing and middleware in the application.
+- **Express**: Express is a web application framework for Node.js that offers a variety of features for building web and mobile applications. It is utilized for managing routing and middleware within the app.
 
 - **Body-parser**: Body-parser is a middleware that parses incoming request bodies in a middleware before your handlers, available under the req.body property.
 
 ## How to run the project
 
 1. Clone the project
-2. Run `npm install` to install the dependencies
-3. Run `npm start` to start the server
-4. Open `http://localhost:3000` in your browser to access the application
+2. Create a .env file with your MailChimp credencials
+3. Run `npm install` to install the dependencies
+4. Run `npm start` to start the server
+5. Open `http://localhost:3000` in your browser to access the application
 
 ## Mailchimp API Key
 
