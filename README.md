@@ -44,6 +44,14 @@ This project allows users to sign up for a newsletter by providing their name, l
 
 You will need to provide your own Mailchimp API key in order to use the API. You can find instructions on how to get your own API key [here](https://mailchimp.com/help/about-api-keys/)
 
+## :scroll: Next steps
+
+ - [ ] Add integration and unit tests
+
+## :sparkles: References
+
+Images provided by [Flaticon](https://www.flaticon.com/free-stickers/computer)
+
 ## :recycle: Customization
 
 As a MIT license feel free to customize the code and design as per your requirement
