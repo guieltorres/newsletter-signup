@@ -1,13 +1,12 @@
 {
   "name": "newsletter-signup",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This project is a simple newsletter signup page. It allows visitors to the website to enter their email address and subscribe to receive regular updates and news via email.",
   "main": "app.js",
   "scripts": {
     "start": "node src/server/app.js",
-    "dev": "nodemon src/server/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && mkdir dist && cp -r public src package.json dist/ && cd dist && npm install --only=production"
+    "build": "rm -rf dist && mkdir dist && cp -r public src package.json dist/ && cd dist && npm install --only=production",
+    "test": "echo \"No tests yet\" && exit 0"
   },
   "author": "Guilherme Torres",
   "license": "ISC",
@@ -18,7 +17,7 @@
     "express": "^4.18.2",
     "request": "^2.88.2"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
